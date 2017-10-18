@@ -15,16 +15,13 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
+      <a class="navbar-brand" href="?"><i class="glyphicon glyphicon-home"></i><h1>Home</h1></a>
     </div>
   </div>
 </nav>
+<center>    
 <div>   
-    <center>    
+    
         <div class="form-group">
             <div class="jumbotron">
   <div class="container text-center">
@@ -36,7 +33,7 @@
   <table>
       <tr>
           <td>
-            <input id="search" type="text" class="form-control" >
+            <input id="search" type="text" class="form-control" autofocus="on" >
           </td>
           <td>
               <button type="button" class="btn btn-primary" style="margin-left:50px;" onclick="search();">Search</button>
@@ -45,16 +42,26 @@
   </table>
   
 </div>
-    </center>
-</div>
-
-    <!-- Left and right controls -->
-
 </div>
   
 <div class="container text-center">    
   <br>
-  <div class="row"><!--
+  <center>
+  <div class="row">
+    <table>
+      <tbody>
+        <tr>
+          <td id="main">
+
+          </td>
+          <td style="padding-left: 100px;">
+            <div class="col-sm-4"  id="related">
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--
     <div class="col-sm-4">
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
       <p>Current Project</p>
@@ -79,12 +86,15 @@
        <p>Some text..</p>
       </div>-->
     </div>
+    
+  </center>
   </div>
+    
 </div><br>
 
 <footer class="container-fluid text-center">
   <p>Akopjan Alex - 2017</p>
 </footer>
-
+</center>
 </body>
 </html>
