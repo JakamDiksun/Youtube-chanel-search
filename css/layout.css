@@ -1,0 +1,36 @@
+    @font-face { 
+        font-family: Custom-font; src: url('Font.otf'); 
+    }
+    @font-face { 
+        font-family: HeaderFont; src: url('HeaderFont.otf'); 
+    }
+    h1{
+       font-family: HeaderFont; 
+    }
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+        background-color: #f2f2f2;
+        
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+    }
+    .jumbotron{
+        background-color: #f2f2f2;
+        background: radial-gradient(ellipse farthest-corner at center top, #f2f2f2 30%, #7f7f7f 100%) !important;
+    }
+    input[type=text] {
+        width: 150px;
+        -webkit-transition: width .35s ease-in-out !important;
+        transition: width .35s ease-in-out !important;
+    }
+    input[type=text]:focus {
+        width: 300px;
+    }
