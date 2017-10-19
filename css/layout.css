@@ -8,7 +8,7 @@
     src: url('HeaderFont.otf');
 }
 
-body{
+body {
     font-family: Custom-font;
 }
 
@@ -16,13 +16,13 @@ h1 {
     font-family: HeaderFont;
 }
 
-img{
-    width:100%;
-    cursor:pointer;
+img {
+    width: 100%;
+    cursor: pointer;
 }
 
-p{
-    cursor:pointer;
+p {
+    cursor: pointer;
 }
 
 th.related {
@@ -91,7 +91,8 @@ input[type=text]:focus {
     border-radius: 4px;
     color: wheat;
 }
-.col-sm-4, .container_text-center{
+
+.col-sm-4, .container_text-center {
     padding-top: 20px;
 }
 

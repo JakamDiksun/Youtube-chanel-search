@@ -37,7 +37,7 @@ function search() {
                 var ChanelID = data.items[0].contentDetails.relatedPlaylists.uploads;
                 window.location = window.location.href.split("?")[0] + "?chanel=" + ChanelID;
             } else { //Ha ezek eredménye 0 (Helytelen csatornanév, vagy 0 videóval rendelkező felhasználó) hiba üzenetet ír ki.
-                $("div[class='row']").html("<div class='invalid'>No chanels were found!</div>");
+                $("div[class='row']").html("<center><div class='invalid'>No chanels were found!</div></center>");
             }
         }
     );
