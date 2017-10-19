@@ -1,100 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Youtube Chanel searcher</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="css/layout.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
-</head>
-<body style="font-family: Custom-font">
 
+<head>
+    <title>Youtube Chanel searcher</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/layout.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="?"><i class="glyphicon glyphicon-home"></i><h1>Home</h1></a>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="?"><i class="glyphicon glyphicon-home"></i>
+                <h1>Home</h1></a>
+        </div>
     </div>
-  </div>
 </nav>
-<center>    
-<div>   
-    
+<center>
+    <div>
         <div class="form-group">
             <div class="jumbotron">
-  <div class="container text-center">
-    <h1>Youtube chanel searcher</h1>      
-    <p>Find your videos</p>
-  </div>
-</div>
-  <label for="pwd">Type the name of the Channel:</label><br>
-  <table>
-      <tr>
-          <td>
-            <input id="search" type="text" class="form-control" autofocus="on" >
-          </td>
-          <td>
-              <button type="button" class="btn btn-primary" style="margin-left:50px;" onclick="search();">Search</button>
-          </td>
-      </tr>
-  </table>
-  
-</div>
-</div>
-  
-<div class="container text-center">    
-  <br>
-  <center>
-  <div class="row">
-    <table>
-      <tbody>
-        <tr>
-          <td id="main">
-
-          </td>
-          <td style="padding-left: 100px;">
-            <div class="col-sm-4"  id="related">
+                <div class="container_text-center">
+                    <h1>Youtube chanel searcher</h1>
+                    <p>Find your videos</p>
+                </div>
             </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <!--
-    <div class="col-sm-4">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Current Project</p>
+            <label>Type the name of the Channel:</label>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        <input id="search" type="text" class="form-control" autofocus>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary" onclick="search();">Search</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <div class="col-sm-4"> 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>    
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>    
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>    
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-      <div class="well">
-       <p>Some text..</p>
-      </div>-->
-    </div>
-    
-  </center>
-  </div>
-    
-</div><br>
+    <div class="container text-center">
+        <br>
+        <div class="row">
+            <table>
+                <tbody>
+                <tr>
+                    <th class="main">
+                    </th>
+                    <th class="related">
+                        Related videos:
+                    </th>
+                </tr>
+                <tr>
+                    <td class="main">
 
-<footer class="container-fluid text-center">
-  <p>Akopjan Alex - 2017</p>
-</footer>
+                    </td>
+                    <td class="related">
+                        <div class="related">
+
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="container-fluid text-center">
+        <p>Akopjan Alex - 2017</p>
+    </footer>
 </center>
 </body>
+
 </html>
