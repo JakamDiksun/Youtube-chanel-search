@@ -12,8 +12,17 @@ body {
     font-family: Custom-font;
 }
 
-h1 {
+h1, {
     font-family: HeaderFont;
+}
+
+td {
+    vertical-align: bottom;
+}
+
+td.title {
+    font-size: 24px;
+    padding-right: 12px;
 }
 
 img {
