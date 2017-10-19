@@ -1,7 +1,6 @@
 var globalKey = "AIzaSyAORPQPMTmZxMpAX5fID61c1lmX0U-OFn8";
 var globalVideoID = getUrlVars().video;
 var globalChanelID = getUrlVars().chanel;
-var globalRelatedCell = $("th[class='related']");
 
 $(document).ready(function () {
     //Az input mezőben {enter} lenyomására meghívódik a search()
@@ -10,11 +9,11 @@ $(document).ready(function () {
             search();
         }
     });
-    globalRelatedCell.hide();
+    $("th[class='related']").hide();
     if (globalChanelID != null) {     //Ha az url-ben meg van adva chanelID, akkor lekéri a hozzá tarozó videókat.
         getVideosByChanelID(globalChanelID);
     } else if (globalVideoID != null) {     //Ha chanelID nincs, de konkrét videoID meg van adva, akkor lekéri az adott videót és a hozzá tartozó related videókat.
-        globalRelatedCell.show();
+        $("th[class='related']").show();
         openVideoAndSuggestions();
     }
 });
