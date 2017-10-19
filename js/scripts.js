@@ -60,6 +60,7 @@ function getVideosByChannelId(ChannelId) {
             });
             if (data.items.length > 0) {
                 var channelTitle = data.items[0].snippet.channelTitle.length > 0 ? data.items[0].snippet.channelTitle : "";
+                $("th[class='main']").html("<td  class='title'><span class='title'>" + channelTitle + "'s </font></td><td>   videos</td>");
             } else {
                 $("div[class='row']").html("<center><div class='invalid'>There is no video on this channel!</div></center>");
             }
